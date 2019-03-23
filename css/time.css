@@ -1,0 +1,42 @@
+#countdown {
+	background: #343a40;
+	color: #fff;
+	position: relative;
+  }
+
+#register {
+	background: #343a40;
+	color: #fff;
+	position: relative;
+  }
+/* ==========================================================================
+Clockdiv
+ ========================================================================== */
+ #clockdiv{
+	font-family: sans-serif;
+	color: #fff;
+	display: inline-block;
+	font-weight: 100;
+	text-align: center;
+	font-size: 30px;
+}
+
+#clockdiv > div{
+	padding: 10px;
+	border-radius: 3px;
+	background: #75B34A;
+	display: inline-block;
+}
+
+#clockdiv div > span{
+	padding: 15px;
+	border-radius: 3px;
+	background: #4E7532; 
+	display: inline-block;
+}
+
+.smalltext{
+	font-family: 'Poppins', sans-serif;
+	padding-top: 5px;
+	font-size: 16px;
+}
