@@ -275,6 +275,14 @@ button:focus {
   background: #1DA1F2;
 }
 
+.whatsapp a {
+  color: #25D366;
+}
+
+.whatsapp a:hover {
+  background: #25D366;
+}
+
 .google-plus a {
   color: #DD4D42;
 }
