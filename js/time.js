@@ -26,7 +26,7 @@ function srvTime(){
     return xmlHttp.getResponseHeader("Date");
 }
 function getTimeRemaining(endtime) {
-    var t = Date.parse(endtime) - Date.parse(new Date()) + dif;
+    var t = Date.parse(endtime);
     var seconds = Math.floor((t / 1000) % 60);
     var minutes = Math.floor((t / 1000 / 60) % 60);
     var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
@@ -64,13 +64,21 @@ function getTimeRemaining(endtime) {
     var timeinterval = setInterval(updateClock, 1000);
   }  
 
-  function diffTime(){
-      var d = Date.parse(new Date()) - Date.parse(dateSrv);
-      return d;
+
+function checkOpen(t){
+  var s = "Kemonprint buka";
+  var minHour= 1;
+  var maxHour= 10; 
+  if(t.getDay() > 0 && t.getDay() < 6 ){
+    if(t.getHours() > minHour && t.getHours() < maxHour ){
+      s= "Kemonprint sedang tutup";
+    }
   }
 
+
+}
 var s = srvTime();
 var dateSrv = new Date(s);  
-var dif = diffTime();
+var isOpen = new checkOpen(dateSrv);
 var deadline = new Date('September 18 , 2018 00:01:00');
 initializeClock('clockdiv', deadline);
