@@ -120,23 +120,23 @@
 
 /*Slider background image*/
 .slider{
-    min-height: 500px;
+    min-height: 400px;
     width:100%;
     position: relative;
     overflow: hidden;
     margin: 0 auto;
 }
 .slider-1{
-    background: url(../img/slider/queue.jpg) fixed no-repeat;
+    background: url(../img/slider/pidato.jpg) fixed no-repeat;
     background-size: cover;
    
 }
 .slider-2{
-    background: url(../img/slider/teh.jpg) fixed no-repeat;
+    background: url(../img/slider/queue.jpg) fixed no-repeat;
     background-size: cover;
 }
 .slider-3{
-    background: url(../img/slider/c.jpg) fixed no-repeat;
+    background: url(../img/slider/cashless.jpg) fixed no-repeat;
     background-size: cover;
 }
 .slider-contents{
@@ -147,7 +147,7 @@
 .slider-contents h1 {
     font-size: 42px;
     font-weight: 700;
-    margin-bottom: 25px;  
+    margin-bottom: 0;
 }
   
 .slider-contents p {
@@ -158,6 +158,6 @@
 }
   
 .slider-contents .btn {
-    margin: 25px 25px 0px 0px;
+    margin: 25px 0px 0px 0px;
     text-transform: uppercase;
 }

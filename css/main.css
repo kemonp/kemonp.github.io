@@ -659,7 +659,7 @@ button:focus {
   6. Features Section Style
    ========================================================================== */
 #features {
-  background: url(../img/padi.jpg) fixed no-repeat;
+  background: url(../img/printbutton.jpg) fixed no-repeat;
   background-size: cover;
   color: #fff;
   overflow: hidden;
@@ -735,7 +735,7 @@ button:focus {
 
 #features .show-box img {
   position: absolute;
-  bottom: -120px;
+  bottom: -20px;
 }
 
 /* ==========================================================================
