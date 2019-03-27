@@ -30,6 +30,7 @@
   14. CONTACT SECTION
   15. FOOTER SECTION
     -15.1 COMING SOON PAGE
+  16. Print Section
   ------------------------------------- */
 /* ==========================================================================
    1. IMPORT GOOGLE FONTS
@@ -1317,3 +1318,24 @@ footer {
   max-height: 450px;
   margin-bottom: 60px;
 }
+/*PRINT SECTION*/
+#print .icon {
+  border: 1px solid #61D2B4;
+  text-align: center;
+  float: left;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+#print i {
+  color: #61D2B4;
+  font-size: 24px;
+  line-height: 60px;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+

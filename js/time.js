@@ -46,14 +46,16 @@ function getTimeRemaining(endtime) {
     var hoursSpan = clock.querySelector('.hours');
     var minutesSpan = clock.querySelector('.minutes');
     var secondsSpan = clock.querySelector('.seconds');
+    var openSpan = clock.querySelector('.open');
   
     function updateClock() {
-      var t = getTimeRemaining(endtime);
+      var t = endtime;
   
-      daysSpan.innerHTML = t.days;
+      daysSpan.innerHTML = t;
       hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
       minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
       secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+      openSpan.innerHTML=checkOpen(dateSrv)
   
       if (t.total <= 0) {
         clearInterval(timeinterval);
@@ -74,11 +76,9 @@ function checkOpen(t){
       s= "Kemonprint sedang tutup";
     }
   }
-
-
+  return s;
 }
 var s = srvTime();
 var dateSrv = new Date(s);  
-var isOpen = new checkOpen(dateSrv);
 var deadline = new Date('September 18 , 2018 00:01:00');
 initializeClock('clockdiv', deadline);
